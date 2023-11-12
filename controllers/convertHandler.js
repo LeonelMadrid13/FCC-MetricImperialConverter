@@ -1,9 +1,7 @@
 const  { units, conversionRate, unitMapping, englishAlphabet } = require('../utils/constants.js');
 
 function ConvertHandler() {
-  
   this.getNum = function(input) {    
-    
     const idx = input.split("").findIndex((char) => englishAlphabet.test(char));
     if (idx === 0) {
       return 1;

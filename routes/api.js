@@ -10,8 +10,8 @@ module.exports = function (app) {
     const { input } = req.query
     if(!input) return res.send("invalid input");
 
-    const initNum = convertHandler.getNum()
-    const initUnit = convertHandler.getUnit()
+    const initNum = convertHandler.getNum(input)
+    const initUnit = convertHandler.getUnit(input)
 
     if (initNum === "invalid number" && initUnit === "invalid unit") {
       return res.send("invalid number and unit");

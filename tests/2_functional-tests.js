@@ -17,7 +17,7 @@ suite("Functional Tests", function () {
           initUnit: "L",
           returnNum: 2.64172,
           returnUnit: "gal",
-          string: "10 liters converts to 2.64172 gallons",
+          str: "10 liters converts to 2.64172 gallons",
         });
         done();
       });
@@ -63,7 +63,7 @@ suite("Functional Tests", function () {
           initUnit: "kg",
           returnNum: 2.20462,
           returnUnit: "lbs",
-          string: "1 kilograms converts to 2.20462 pounds",
+          str: "1 kilograms converts to 2.20462 pounds",
         });
         done();
       });
